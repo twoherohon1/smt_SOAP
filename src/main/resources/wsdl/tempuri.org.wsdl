@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://localhost:8080/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://localhost:8080/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://localhost:8080/">
+      <s:element name="DMIS_WebService_Version_1_19_1_21112019">
+        <s:complexType />
+      </s:element>
+      <s:element name="DMIS_WebService_Version_1_19_1_21112019Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DMIS_WebService_Version_1_19_1_21112019Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TEST_CONNECT">
+        <s:complexType />
+      </s:element>
+      <s:element name="TEST_CONNECTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TEST_CONNECTResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CommitData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PERIOD" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CommitDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CommitDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Budgetcode_PresentYear_Batch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XML_Str" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Budgetcode_PresentYear_BatchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Budgetcode_PresentYear_BatchResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Budgetcode_PastYear_Batch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XML_Str" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Budgetcode_PastYear_BatchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Budgetcode_PastYear_BatchResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Budgetcode_PastYear">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Budgetcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Projectcode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Budgetcode_PastYearResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Budgetcode_PastYearResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Budgetcode_PresentYear">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Budgetcode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Budgetcode_PresentYearResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Budgetcode_PresentYearResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="DMIS_WebService_Version_1_19_1_21112019SoapIn">
+    <wsdl:part name="parameters" element="tns:DMIS_WebService_Version_1_19_1_21112019" />
+  </wsdl:message>
+  <wsdl:message name="DMIS_WebService_Version_1_19_1_21112019SoapOut">
+    <wsdl:part name="parameters" element="tns:DMIS_WebService_Version_1_19_1_21112019Response" />
+  </wsdl:message>
+  <wsdl:message name="TEST_CONNECTSoapIn">
+    <wsdl:part name="parameters" element="tns:TEST_CONNECT" />
+  </wsdl:message>
+  <wsdl:message name="TEST_CONNECTSoapOut">
+    <wsdl:part name="parameters" element="tns:TEST_CONNECTResponse" />
+  </wsdl:message>
+  <wsdl:message name="CommitDataSoapIn">
+    <wsdl:part name="parameters" element="tns:CommitData" />
+  </wsdl:message>
+  <wsdl:message name="CommitDataSoapOut">
+    <wsdl:part name="parameters" element="tns:CommitDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="Budgetcode_PresentYear_BatchSoapIn">
+    <wsdl:part name="parameters" element="tns:Budgetcode_PresentYear_Batch" />
+  </wsdl:message>
+  <wsdl:message name="Budgetcode_PresentYear_BatchSoapOut">
+    <wsdl:part name="parameters" element="tns:Budgetcode_PresentYear_BatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="Budgetcode_PastYear_BatchSoapIn">
+    <wsdl:part name="parameters" element="tns:Budgetcode_PastYear_Batch" />
+  </wsdl:message>
+  <wsdl:message name="Budgetcode_PastYear_BatchSoapOut">
+    <wsdl:part name="parameters" element="tns:Budgetcode_PastYear_BatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="Budgetcode_PastYearSoapIn">
+    <wsdl:part name="parameters" element="tns:Budgetcode_PastYear" />
+  </wsdl:message>
+  <wsdl:message name="Budgetcode_PastYearSoapOut">
+    <wsdl:part name="parameters" element="tns:Budgetcode_PastYearResponse" />
+  </wsdl:message>
+  <wsdl:message name="Budgetcode_PresentYearSoapIn">
+    <wsdl:part name="parameters" element="tns:Budgetcode_PresentYear" />
+  </wsdl:message>
+  <wsdl:message name="Budgetcode_PresentYearSoapOut">
+    <wsdl:part name="parameters" element="tns:Budgetcode_PresentYearResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DMIS_Service1Soap">
+    <wsdl:operation name="DMIS_WebService_Version_1_19_1_21112019">
+      <wsdl:input message="tns:DMIS_WebService_Version_1_19_1_21112019SoapIn" />
+      <wsdl:output message="tns:DMIS_WebService_Version_1_19_1_21112019SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TEST_CONNECT">
+      <wsdl:input message="tns:TEST_CONNECTSoapIn" />
+      <wsdl:output message="tns:TEST_CONNECTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CommitData">
+      <wsdl:input message="tns:CommitDataSoapIn" />
+      <wsdl:output message="tns:CommitDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Budgetcode_PresentYear_Batch">
+      <wsdl:input message="tns:Budgetcode_PresentYear_BatchSoapIn" />
+      <wsdl:output message="tns:Budgetcode_PresentYear_BatchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Budgetcode_PastYear_Batch">
+      <wsdl:input message="tns:Budgetcode_PastYear_BatchSoapIn" />
+      <wsdl:output message="tns:Budgetcode_PastYear_BatchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Budgetcode_PastYear">
+      <wsdl:input message="tns:Budgetcode_PastYearSoapIn" />
+      <wsdl:output message="tns:Budgetcode_PastYearSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Budgetcode_PresentYear">
+      <wsdl:input message="tns:Budgetcode_PresentYearSoapIn" />
+      <wsdl:output message="tns:Budgetcode_PresentYearSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DMIS_Service1Soap" type="tns:DMIS_Service1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DMIS_WebService_Version_1_19_1_21112019">
+      <soap:operation soapAction="http://localhost:8080/DMIS_WebService_Version_1_19_1_21112019" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TEST_CONNECT">
+      <soap:operation soapAction="http://localhost:8080/TEST_CONNECT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CommitData">
+      <soap:operation soapAction="http://localhost:8080/CommitData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Budgetcode_PresentYear_Batch">
+      <soap:operation soapAction="http://localhost:8080/Budgetcode_PresentYear_Batch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Budgetcode_PastYear_Batch">
+      <soap:operation soapAction="http://localhost:8080/Budgetcode_PastYear_Batch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Budgetcode_PastYear">
+      <soap:operation soapAction="http://localhost:8080/Budgetcode_PastYear" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Budgetcode_PresentYear">
+      <soap:operation soapAction="http://localhost:8080/Budgetcode_PresentYear" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DMIS_Service1Soap12" type="tns:DMIS_Service1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DMIS_WebService_Version_1_19_1_21112019">
+      <soap12:operation soapAction="http://localhost:8080/DMIS_WebService_Version_1_19_1_21112019" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TEST_CONNECT">
+      <soap12:operation soapAction="http://localhost:8080/TEST_CONNECT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CommitData">
+      <soap12:operation soapAction="http://localhost:8080/CommitData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Budgetcode_PresentYear_Batch">
+      <soap12:operation soapAction="http://localhost:8080/Budgetcode_PresentYear_Batch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Budgetcode_PastYear_Batch">
+      <soap12:operation soapAction="http://localhost:8080/Budgetcode_PastYear_Batch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Budgetcode_PastYear">
+      <soap12:operation soapAction="http://localhost:8080/Budgetcode_PastYear" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Budgetcode_PresentYear">
+      <soap12:operation soapAction="http://localhost:8080/Budgetcode_PresentYear" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DMIS_Service1">
+    <wsdl:port name="testRequest" binding="tns:DMIS_Service1Soap">
+      <soap:address location="http://localhost:8080"/>
+    </wsdl:port>
+    <wsdl:port name="DMIS_Service1Soap12" binding="tns:DMIS_Service1Soap12">
+      <soap12:address location="http://localhost:8080/DMIS_Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
